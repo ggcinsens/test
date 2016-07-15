@@ -24,6 +24,7 @@ public class TestRestfulInterface {
 		HttpClient client = new DefaultHttpClient();
 		try {
 			HttpResponse response = client.execute(httpPost);
+			System.out.println(response.getEntity().getContent().toString());
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
