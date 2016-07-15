@@ -22,7 +22,6 @@ public class TestRestfulInterface {
 		entity.setContentType("application/json");
 		httpPost.setEntity(entity);
 		HttpClient client = new DefaultHttpClient();
-		System.out.println("-----------------------------");
 		try {
 			HttpResponse response = client.execute(httpPost);
 			System.out.println(response.getEntity().getContent().toString());
